@@ -1,0 +1,11 @@
+<If Condition="Me.IsInInstance" >
+	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
+
+	<MoveTo X="447.0389" Y="1343.215" Z="120.6945" />
+
+	<CustomBehavior File="RunLikeHell" AllowCombat="True" >
+		<Hotspot X="474.4619" Y="1366.258" Z="110.4643" />
+		<Hotspot X="533.9734" Y="1407.787" Z="93.8436" />
+	</CustomBehavior>
+
+</If>
