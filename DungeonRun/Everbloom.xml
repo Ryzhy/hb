@@ -6,6 +6,8 @@
 	<CustomBehavior File="RunLikeHell" AllowCombat="True" >
 		<Hotspot X="474.4619" Y="1366.258" Z="110.4643" />
 		<Hotspot X="533.9734" Y="1407.787" Z="93.8436" />
+		<Hotspot X="511.5727" Y="1433.57" Z="103.561" />
+		<Hotspot X="474.376" Y="1464.063" Z="103.8967" />5
 	</CustomBehavior>
 
 </If>
