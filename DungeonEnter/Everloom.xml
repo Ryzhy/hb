@@ -1,0 +1,15 @@
+<If Condition="Me.MapId != 604 &amp;&amp; Me.FreeBagSlots &gt;= Settings.Instance.VendorMinBagSlots" >
+	<If Condition="Me.Location.Distance(new WoWPoint(7180.871, 251.6356, 135.7476)) &gt; 100 " >
+		<CustomBehavior File="RunCode" Code="Logging.Write(System.Windows.Media.Colors.DeepSkyBlue, &quot;[Azyul]: Heading to Instance.&quot;);" />
+	</If>
+	<If Condition="CanFly()" >
+		<CustomBehavior File="FlyTo" X="7180.871" Y="251.6356" Z="135.7476" />
+		<Else>
+			<MoveTo Nav="Fly" X="7180.871" Y="251.6356" Z="135.7476" />
+		</Else>
+	</If>
+
+	<CustomBehavior File="MyCTM" X="7180.871" Y="251.6356" Z="135.7476" TerminateWhen="Me.IsInInstance" />
+	<!--<CustomBehavior File="GoThruPortal" Timeout="30000" X="6968.59" Y="-4404.028" Z="442.5896" />-->
+	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
+</If>
