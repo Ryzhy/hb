@@ -31,13 +31,7 @@
 
 	
 	<While Condition="true" >
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/DungeonEnter/" /> <!-- Enter Dungeon --> НАПИСАТЬ
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/DungeonRun/" /> <!-- Run Dungeon --> НАПИСАТЬ
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/Snips/GuildBank.xml" /> <!-- Guild Bank Stuff -->
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/Snips/DeleteItems.xml" /> <!-- Delete Items -->
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/DungeonExit/" /> <!-- Exit Dungeon --> НАПИСАТЬ
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/DungeonVendor/ItemsAndMounts.xml" /> <!-- Vendor by Mounts/Items/Etc -->
-		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/EchoTiger/AzyulSource/master/DungeonVendor/" /> <!-- Vendor by Everbloom Vendors --> НАПИСАТЬ
+		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/Ryzhy/hb/master/DungeonEnter/Everloom.xml" /> <!-- Enter Dungeon -->
 	</While>
 
 </QuestOrder>
