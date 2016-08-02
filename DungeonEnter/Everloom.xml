@@ -9,7 +9,8 @@
 		</Else>
 	</If>
 
-	<CustomBehavior File="MyCTM" X="7180.871" Y="251.6356" Z="135.7476" TerminateWhen="Me.IsInInstance" />
+	<CustomBehavior File="MyCTM" X="7098.12" Y="194.17" Z="144.63" TerminateWhen="Me.IsInInstance" />
 	<!--<CustomBehavior File="GoThruPortal" Timeout="30000" X="6968.59" Y="-4404.028" Z="442.5896" />-->
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
+
