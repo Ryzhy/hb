@@ -32,6 +32,8 @@
 	
 	<While Condition="true" >
 		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/Ryzhy/hb/master/DungeonEnter/Everloom.xml" /> <!-- Enter Dungeon -->
+		<CustomBehavior File="RemoteCode" CodeUrl="https://raw.githubusercontent.com/Ryzhy/hb/master/DungeonRun/Everbloom.xml" />
+		https://raw.githubusercontent.com/Ryzhy/hb/master/DungeonRun/Everbloom.xml
 	</While>
 
 </QuestOrder>
