@@ -1,1 +1,17 @@
-
+X="421.003" Y="1307.749" Z="125.2797
+<If Condition="Me.IsInInstance" >
+	<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447) || Me.KnowsSpell(122708))" >
+		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[Azyul]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Skipping wait since we're going to the vendor.&quot;);" />
+		<Else>
+			<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
+		</Else>
+	</If>
+	<CustomBehavior File="RunCode" Code="AzyulGPHTracker.LogGPH();" />
+	<While Condition="Me.IsInInstance" >
+		<MoveTo X="421.003" Y="1307.749" Z="125.2797" />
+		<CustomBehavior File="MyCTM" X="421.003" Y="1307.749" Z="125.2797" TerminateWhen="!Me.IsInInstance" />
+		<CustomBehavior File="Misc\RunLua" Lua="MoveForwardStart();" />
+		<CustomBehavior File="WaitTimer" WaitTime="35000" TerminateWhen="!Me.IsInInstance" />
+	</While>
+	<CustomBehavior File="Misc\RunLua" Lua="ResetInstances();" />
+</If>
